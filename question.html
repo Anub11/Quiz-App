@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz Pro</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+
+
+</head>
+<body>
+
+	 	<div class="box" id="questionscreen">
+	 		<div class="title">
+	 			Online Quiz Application 
+	 			<a id="logout" onclick="logout()" style="float: right;">Log Out</a>
+	 		</div>
+
+	 		<div class="header">
+	 			<div class="scorebox">Score : <span></span></div>
+	 			<div class="timerbox">Time Left : <span></span></div>
+	 		</div>
+	 		<p style="color: red;">Be careful we give you instant answer so think twice before click the answer button</p>
+	 		<br>
+	 		<div class="questionbox">
+	 				 			
+	 		</div>
+	 		<div class="optionbox">
+	 			<span onclick="checkanswer(this)" data-opt="1"></span>
+	 			<span onclick="checkanswer(this)" data-opt="2"></span>
+	 			<span onclick="checkanswer(this)" data-opt="3"></span>
+	 			<span onclick="checkanswer(this)" data-opt="4"></span>
+	 		</div>
+	 		<div class="footer">
+	 			<button onclick="shownext()">Next</button>
+	 			<button onclick="showresult(1)">Show Result</button>
+	 		</div>
+
+	 	</div>
+
+	 	<div class="box" id="resultscreen"  style="display: none;">
+	 		<div class="title">
+	 			Online Quiz Application
+	 		</div>
+
+	 		<div class="resultbox">
+	 			<label>Questions : </label>
+	 			<span id="totalqueston"></span>
+	 			<label>Attempt : </label>
+	 			<span id="attemptqueston"></span>
+	 			<label>Correct : </label>
+	 			<span id="correctanswer"></span>
+	 			<label>Wrong : </label>
+	 			<span id="wronganswer"></span>
+	 			<br>
+	 			<span id="output"></span>
+	 		</div>
+	 		<div class="buttonbox">
+	 			<a href="quiz.html">Start Again</a>
+	 			
+	 		</div>
+	 	</div>
+</body>
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
